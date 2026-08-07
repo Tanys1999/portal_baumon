@@ -2,7 +2,7 @@
 // Caminho do Excel dentro do próprio repositório (relativo ao index.html).
 // Troque o nome do arquivo aqui se o seu Excel tiver outro nome.
 const CONFIG = {
-  dataUrl: "data/MRP-Baumon.xlsx",
+  dataUrl: "data/MRP - Baumon.xlsx",
   pollIntervalMs: 15000 // verifica se o arquivo mudou a cada 15s
 };
 
