@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leitor Excel - Baumon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css" />
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div>
+        <h1>Leitor Excel - Baumon</h1>
+        <p>Carrega o arquivo MRP e exibe as abas "Base de Dados" e "Precificação"</p>
+      </div>
+    </header>
+
+    <div class="upload-panel">
+      <button class="file-btn" id="refreshBtn" type="button">
+        <i class="ti ti-refresh" aria-hidden="true"></i>
+        Atualizar agora
+      </button>
+      <label class="file-btn secondary">
+        <i class="ti ti-upload" aria-hidden="true"></i>
+        Abrir arquivo local
+        <input type="file" id="fileInput" accept=".xlsx,.xls" />
+      </label>
+      <div>
+        <div class="upload-status" id="uploadStatus">Nenhum arquivo carregado ainda.</div>
+        <div class="upload-status" id="syncStatus">Buscando data/MRP-Baumon.xlsx&hellip;</div>
+      </div>
+    </div>
+
+    <div class="tabs" id="tabs"></div>
+    <div class="toolbar" id="toolbar"></div>
+    <div class="table-wrap" id="tableWrap">
+      <div class="empty-state">
+        <i class="ti ti-table-off" aria-hidden="true"></i>
+        Selecione um arquivo Excel para carregar os dados.
+      </div>
+    </div>
+  </div>
+
+  <script src="src/xlsx.full.min.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>
